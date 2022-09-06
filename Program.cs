@@ -33,6 +33,9 @@ namespace cs_con_binary_writer
 
         private static void WriteBinaryData()
         {
+            // BinaryData bd = new BinaryData {item1 = 1.250F, item2 = "c:\\Temp", item3 = 10, item4 = true};
+            // BinaryData bd = new BinaryData() {item1 = 1.250F, item2 = "c:\\Temp", item3 = 10, item4 = true};
+            // var bd = new BinaryData{item1 = 1.250F, item2 = "c:\\Temp", item3 = 10, item4 = true};
             BinaryData bd = new BinaryData(1.250F, "c:\\Temp", 10, true);
 
             int size = Marshal.SizeOf(bd);
